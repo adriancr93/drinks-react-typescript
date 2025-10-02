@@ -28,3 +28,11 @@ In its latest versions, React Router is practically a framework for React.
 ---
 
 > **Note:** This project demonstrates the use of React Router for building multi-page React applications.
+
+## How to Create Multiple Stores in Zustand
+
+As your apps grow or become more complex, your store can also grow.
+
+There are two options for managing multiple stores: create different stores or split them using the Slice Pattern.
+
+The Slice Pattern is something you also find in Redux Toolkit, and it's a way to divide your stores into small pieces and combine them into a main store.
