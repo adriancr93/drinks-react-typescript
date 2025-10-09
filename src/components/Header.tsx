@@ -26,7 +26,7 @@ export default function Header() {
   }
 
   const handledSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault
+    e.preventDefault();
 
     //To do: validate
     if(Object.values(searchFilters).includes('')) {
@@ -57,7 +57,7 @@ export default function Header() {
                     </div>
 
                     <div className="space-y-4">
-                        <label htmlFor="category" className="block text-white uppercase font-extrabold text-lg">Categorie</label>
+                        <label htmlFor="category" className="block text-white uppercase font-extrabold text-lg">Categories</label>
                         <select id="category" name="category" className="p-3 w-full rounded-lg focus:outline-none bg-white" onChange={handledChange} value={searchFilters.category}>
                             <option value="">-- Select --</option>
                             {categories.drinks.map((category) => (
