@@ -13,6 +13,7 @@ export default function Header() {
   const fetchCategories = useAppStore((state) => state.fetchCategories)
   const categories = useAppStore((state) => state.categories)
   const searchRecipes = useAppStore((state) => state.searchRecipes)
+  const showNotification = useAppStore((state) => state.showNotification)
 
   useEffect(() => {
     fetchCategories()
@@ -30,7 +31,10 @@ export default function Header() {
 
     //To do: validate
     if(Object.values(searchFilters).includes('')) {
-
+        showNotification({
+            text: 'All the input are required',
+            error: true
+        })
         return
     }
     // Consult the recipes
