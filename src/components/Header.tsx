@@ -51,6 +51,7 @@ export default function Header() {
                 <nav className="flex gap-4">
                     <NavLink to="/" className={({ isActive }) => isActive ? "text-orange-500 uppercase font-bold" : "text-white uppercase font-bold"}>Home</NavLink>
                     <NavLink to="/favorites" className={({ isActive }) => isActive ? "text-orange-500 uppercase font-bold" : "text-white uppercase font-bold"}>Favorites</NavLink>
+                    <NavLink to="/generate" className={({ isActive }) => isActive ? "text-orange-500 uppercase font-bold" : "text-white uppercase font-bold"}>Generate with AI</NavLink>
                 </nav>
             </div>
             { isHome && (
